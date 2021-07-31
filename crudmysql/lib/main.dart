@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -103,6 +104,15 @@ class ItemList extends StatelessWidget {
             child: Card(
               child: ListTile(
                 title: Text(list![i]['item_name']),
+                leading: Icon(
+                  Icons.widgets,
+                ),
+                subtitle: Text(
+                  list![i]['stock'],
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
             ),
           );
