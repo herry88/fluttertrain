@@ -26,6 +26,24 @@ class InputData extends StatelessWidget {
                       fontStyle: FontStyle.italic,
                     ),
                   ),
+                ),
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Item Code',
+                    labelText: 'Item Code',
+                    hintStyle: GoogleFonts.lato(
+                      fontStyle: FontStyle.italic,
+                    ),
+                  ),
+                ),
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Item Code',
+                    labelText: 'Item Code',
+                    hintStyle: GoogleFonts.lato(
+                      fontStyle: FontStyle.italic,
+                    ),
+                  ),
                 )
               ],
             )
